@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Closure in JavaScript</title>
+    <script>
+      function test() {
+        let a = 300;
+        let fun = function inner() {
+          a++;
+          return a;
+        };
+        return fun;
+      }
+
+      let inner = test();
+      console.log(inner());
+      console.log(inner());
+      console.log(inner());
+      console.log(inner());
+      console.log(inner());
+    </script>
+  </head>
+  <body>
+    <h1>Closure in JavaScript</h1>
+  </body>
+</html>

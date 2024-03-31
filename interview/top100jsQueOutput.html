@@ -348,7 +348,155 @@
 </script>
 <script>
   // 56
-  for (let i = 0; i < 3; i++) {
-    setTimeout(() => console.warn(i), 1);
+  // for (let i = 0; i < 3; i++) {
+  //   setTimeout(() => console.warn(i), 1);
+  // }
+</script>
+<script>
+  //57
+  // console.warn(+true);
+  // console.warn(typeof +true);
+</script>
+<script>
+  //58
+  // console.warn(!"dk");
+  // console.warn(typeof "dk");
+</script>
+<script>
+  // 59
+  // let data = "size";
+  // const bird = {
+  //   size: "small",
+  // };
+  // console.warn(bird[data]);
+  // console.warn(bird["size"]);
+  // console.warn(bird.size);
+  // console.warn(bird.data);
+</script>
+<script>
+  //60
+  // let c = { name: "peter" };
+  // let d;
+
+  // d = c;
+  // c.name = "anil";
+  // console.warn(d.name);
+</script>
+<script>
+  // 61
+  // var x;
+  // var x = 10;
+  // console.warn(x);
+</script>
+<script>
+  // 62
+  // var x;
+  // let x = 10;
+  // console.warn(x);
+</script>
+<script>
+  // 63
+  // let a = 3;
+  // let b = new Number(3);
+  // console.log(a == b);
+  // console.log(a === b);
+</script>
+<script>
+  // 64
+  // let name;
+  // nmae = {}; //Typo!
+  // console.log(name);
+</script>
+<script>
+  // 65
+  // function fruit() {
+  //   console.log("Woof!");
+  // }
+  // fruit.name = "apple";
+  // fruit();
+</script>
+<script>
+  // 66
+  // function sum(a, b) {
+  //   return a + b;
+  // }
+  // console.warn(sum(1, "2"));
+</script>
+<script>
+  // 67
+  // let number = 0;
+  // console.log(number++);
+  // console.warn(++number);
+  // console.warn(number);
+</script>
+<script>
+  // 68
+  // function getAge(...args) {
+  //   console.log(typeof args);
+  // }
+  // getAge(21);
+</script>
+<script>
+  // 69
+  // function getAge() {
+  //   "use strict";
+  //   age = 21;
+  //   console.log(age);
+  // }
+  // getAge();
+</script>
+<script>
+  // 70
+  // const sum = eval("10*10+5");
+  // console.warn(sum);
+</script>
+<script>
+  // 71
+  // **How long is cool_secret accessible ?
+  // sessionStorage.setItem("cool_secret", 123);
+</script>
+<script>
+  // 72
+  // const obj = { 1: "a", 2: "b", 3: "c" };
+  // console.log(obj.hasOwnProperty("1"));
+  // console.log(obj.hasOwnProperty(1));
+</script>
+<script>
+  // 73
+  // const obj = { a: "one", b: "two", a: "repeat" };
+  // console.log(obj);
+</script>
+<script>
+  // 74
+  // for (let i = 1; i < 5; i++) {
+  //   if (i === 3) continue;
+  //   console.log(i);
+  // }
+</script>
+<script>
+  // 75
+  // const foo = () => console.log("First");
+  // const bar = () => setTimeout(() => console.log("Second"));
+  // const baz = () => console.log("Third");
+
+  // bar();
+  // foo();
+  // baz();
+</script>
+<!-- <div> -->
+<!-- 76 -->
+<!-- <div onclick="console.log('first div')">
+    <div onclick="console.log('second div')">
+      <button onclick="console.log('button')">Click!</button>
+    </div>
+  </div> -->
+<!-- </div> -->
+<script>
+  // 77
+  const person = { name: "anil" };
+  function sayHi(age) {
+    return `${this.name} is ${age}`;
   }
+  console.log(sayHi.call(person, 21));
+  console.log(sayHi.bind(person, 21));
 </script>

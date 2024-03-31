@@ -493,10 +493,191 @@
 <!-- </div> -->
 <script>
   // 77
-  const person = { name: "anil" };
-  function sayHi(age) {
-    return `${this.name} is ${age}`;
-  }
-  console.log(sayHi.call(person, 21));
-  console.log(sayHi.bind(person, 21));
+  // const person = { name: "anil" };
+  // function sayHi(age) {
+  //   return `${this.name} is ${age}`;
+  // }
+  // console.log(sayHi.call(person, 21));
+  // console.log(sayHi.bind(person, 21));
+</script>
+<script>
+  // 78
+  // function sayHi() {
+  //   return (() => 0)();
+  // }
+  // console.log(typeof sayHi());
+</script>
+<script>
+  // 79
+  // function sayHi() {
+  //   return () => 0;
+  // }
+  // console.log(typeof sayHi());
+</script>
+<script>
+  // 80
+  // console.log(typeof typeof 1);
+</script>
+<script>
+  // 81
+  // const numbers = [1, 2, 3];
+  // numbers[6] = 11;
+  // console.log(numbers);
+</script>
+<script>
+  // 82
+  // const numbers = [1, 2, 3];
+  // numbers[9] = numbers;
+  // console.log(numbers);
+</script>
+<script>
+  // 83
+  // Everything in JavaScript is either a...
+  // A: primitive or object  // answer
+  // B: function or object
+  // C: trick question! only objects
+  // D: number or object
+</script>
+<script>
+  // 84
+  // console.log(!!null);
+  // console.log(!!"");
+  // console.log(!!1);
+</script>
+<script>
+  // 85
+  // console.warn(setInterval(() => console.log("Hi"), 1000));
+  // console.warn(setInterval(() => console.log("Hi"), 1000));
+  // console.warn(setInterval(() => console.log("Hi"), 1000));
+</script>
+<script>
+  // 86
+  // console.log([..."anil"]);
+</script>
+<script>
+  // 87
+  // const firstPromise = new Promise((res, rej) => {
+  //   setTimeout(res, 500, "one");
+  // });
+
+  // const secondPromise = new Promise((res, rej) => {
+  //   setTimeout(res, 100, "two");
+  // });
+
+  // Promise.race([firstPromise, secondPromise]).then((res) => console.log(res));
+</script>
+<script>
+  // 88
+  // let person = { name: "peter" };
+  // const members = [person];
+  // person = null;
+  // console.log(members);
+</script>
+<script>
+  // 89
+  // const person = {
+  //   name: "batman",
+  //   age: 21,
+  // };
+  // for (const item in person) {
+  //   console.log(item);
+  // }
+</script>
+<script>
+  // 90
+  // let data = 3 + 4 + "5";
+  // console.log(typeof data);
+</script>
+<script>
+  // 91
+  // console.log(typeof 3 + 4 + "5");
+</script>
+<script>
+  // 92
+  // console.log(typeof (3 + 4 + +"5"));
+</script>
+<script>
+  // 93
+  // console.log([] = []);
+</script>
+<script>
+  // 94
+  // let data = [1, 2, 3].map((num) => {
+  //   if (typeof num === "number") return;
+  //   return num * 2;
+  // });
+  // console.warn(data);
+</script>
+<script>
+  // 95
+  // function getInfo(member) {
+  //   member.name = "Anil";
+  // }
+  // const person = { name: "Sarah" };
+  // getInfo(person);
+  // console.log(person);
+</script>
+<script>
+  // 96
+  // function Car() {
+  //   this.make = "tata";
+  //   return { make: "Kia" };
+  // }
+  // const myCar = new Car();
+  // console.log(myCar.make);
+</script>
+<script>
+  // 97
+  // (() => {
+  //   let x = (y = 10);
+  // })();
+  // console.log(typeof x);
+</script>
+<script>
+  // 98
+  // (() => {
+  //   let x = (y = 10);
+  //   // let x
+  // })();
+  // console.log(typeof y);
+</script>
+<script>
+  // 99
+  // (() => {
+  //   let x = 10;
+  // })();
+
+  // (() => {
+  //   let x = 10;
+  // })();
+
+  // console.log(typeof x);
+</script>
+<script>
+  // 100
+  // (() => {
+  //   let x = y = 10;
+  // })();
+
+  // (() => {
+  //   let x = y = 20;
+  // })();
+
+  // console.log(y);
+</script>
+<script>
+  // 101
+  // let x = 100
+  // (() => {
+  //   var x = 20;
+  // })();
+  // console.log(x);
+</script>
+<script>
+  // 102
+  // console.warn(!true - true);
+</script>
+<script>
+  // 103
+  console.warn(true + +"10");
 </script>
